@@ -1,0 +1,42 @@
+
+Clover EFI installer log - Sun Mar 24 23:18:32 WIB 2019
+Installer version: v2.4k r4901 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
+   1:                        EFI EFI                     589.3 MB   disk0s1
+   2:       Microsoft Basic Data Windows 10              268.4 GB   disk0s2
+   3:                 Apple_APFS Container disk1         269.1 GB   disk0s3
+   4:       Microsoft Basic Data My Self                 462.2 GB   disk0s4
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +269.1 GB   disk1
+                                 Physical Store disk0s3
+   1:                APFS Volume Macintosh HD            118.0 GB   disk1s1
+   2:                APFS Volume Preboot                 31.1 MB    disk1s2
+   3:                APFS Volume Recovery                1.0 GB     disk1s3
+   4:                APFS Volume VM                      4.3 GB     disk1s4
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *8.1 GB     disk2
+   1:             Windows_FAT_32 INFORMATIKA             8.0 GB     disk2s1
+
+Target volume /Volumes/Macintosh HD on disk1 is APFS on physical store disk0s3
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+Activating /etc/rc.boot.d/70.disable_sleep_proxy_client.local rc script
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
